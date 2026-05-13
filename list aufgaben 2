@@ -1,0 +1,25 @@
+# Ursprungsliste
+temperaturen = [15.2, 18.7, 22.1, 24.5, 19.3, 16.8, 21.4]
+
+# a) Die ersten drei Elemente
+erste_drei = temperaturen[:3]
+
+# b) Die letzten drei Elemente (mithilfe von negativen Indizes)
+letzte_drei = temperaturen[-3:]
+
+# c) Mittleres Element ermitteln
+mittlerer_index = len(temperaturen) // 2
+mittlere_temp = temperaturen[mittlerer_index]
+
+# d) Spannweite (Differenz aus Maximum und Minimum) berechnen
+spannweite = max(temperaturen) - min(temperaturen)
+
+# e) Alle Ergebnisse übersichtlich ausgeben
+print("--- Ergebnisse der Temperatur-Auswertung ---")
+print(f"a) Erste drei Temperaturen: {erste_drei}")
+print(f"b) Letzte drei Temperaturen: {letzte_drei}")
+print(f"c) Mittlerer Index: {mittlerer_index} -> Mittlere Temperatur: {mittlere_temp}")
+
+# Bei Fließkommazahlen (Floats) entstehen in Python oft lange Nachkommastellen.
+# Daher runden wir die Ausgabe der Spannweite hier auf 2 Nachkommastellen (.2f).
+print(f"d) Spannweite: {spannweite:.2f}")
